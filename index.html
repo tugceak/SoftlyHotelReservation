@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WELCOME TO SOFTLY</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+      
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>SOFTLY HOTEL</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>From booking to bed, we’re here to help you rest easy. Whether it’s our choice of rooms across 800+ hotels, beds you won’t want to leave, our super tasty food, flexible rates that have you covered whatever the weather or our friendly team members who genuinely care about you, these are just some of the reasons we’re one of the most-loved hotels and beyond.</p>
+         <button type = "button" id="bookButton"class = "head-btn">BOOK NOW</button>  
+     
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">HOME</a></li>
+                <li><a href = "#services">OUR SERVICES</a></li>
+                <li><a href = "#rooms">ROOMS</a></li>
+                <li><a href = "#customers">CUSTOMERS</a></li>
+              
+            </ul>
+         <!--<button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button> -->   
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <p style="size: 10dp;"> OUR SERVICES</p>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <img  style="width:450px;height: 300px" src = "images/food.jpg" alt = "customer image">
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <img style="width:450px;height: 300px" src = "images/redreshment.jpg" alt = "refresh image">
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <img style="width:450px;height: 300px" src = "images/housekeeper.jpg" alt = "housekeeper image">
+                
+                  
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <img style="width:450px;height: 300px" src = "images/security.jpeg" alt = "security image">
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+  
+  
+        <div class = "book">
+            <form  action="book.php" method="post" class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+   
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <p style="size: 10dp;"> ROOMS</p>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Lake House</h3>
+                        
+                        <p> Hidden in the garden between the hotel's main building and the sparkling sea, Lake House is a luxury option for your family vacation in Antalya. The 170-square-metre suite, opening onto the pool, has two bedrooms and two bathrooms and can accommodate up to five adults and one child under 11 years old.</p>
+                        <p class = "rate">
+                            <span>$579.00 /</span> Per Night
+                        </p>
+                   
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Premium Rooms</h3>
+                        
+                        <p>Softly Hotel's Premium Sea/Pool View rooms range in size from 42 to 48 square meters and are located in the hotel's main building. In addition, the rooms have a sofa and a balcony with pool and sea views.</p>
+                        <p class = "rate">
+                            <span>$239.00 /</span> Per Night
+                        </p>
+                        
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Deluxe Rooms</h3>
+        
+                        <p>Softly Hotel's Deluxe rooms, located in the hotel's main building, can accommodate up to three adults and measure 61 square meters. These rooms have a balcony with garden, pool or sea views and a seating area as well as a double bed.</p>
+                        <p class = "rate">
+                            <span>$262.00 /</span> Per Night
+                        </p>
+                        
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room4.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Family Rooms</h3>
+                       
+                        <p> Up to four adults can be accommodated in our spacious Family rooms ranging in size from 55 to 60 square meters. The rooms in the main building have two bedrooms with a door between them. The first bedroom has a double bed and the second has two single beds.
+                        </p>
+
+                        <p class = "rate">
+                            <span>$362.00 /</span> Per Night
+                        </p>
+                       
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>Rooms are clean, breakfast is good and staff are friendly</p>
+                        <br>  <br>  <br>  <br>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>EMİLY J. ,LONDON</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>Staff are polite and courteous, clean, tidy, comfortable and stylish.</p>
+                        <br>  <br>
+             <br>  <br>  <br>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>ALEXANDER H. ,SPAIN</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>Although it is a bit biased in terms of location, the establishment is very clean, the employees who comply with the pandemic conditions are respectful to the customers, the fitness and spa parts are really excellent.</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>JACK J. ,ABD</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>GOOD SERVICES</h3>
+                        <p>Spa part is very clean and hygienic the therapists are really good and I recommend you to go. The welcoming staff is polite and smiling. They follow the hygiene rules</p>
+                        <img src = "images/cus4.jpg" alt = "customer image">
+                        <span>SARAH R. ,LONDON</span>
+                    </div>
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>BEAUTİFIL PLACE</h3>
+                        <p>The hotel is beautiful, the place is beautiful. Clean hotel close to everything.</p>
+                        <img src = "images/cus5.jpg" alt = "customer image">
+                        <span>EMILY D. ,US</span>
+                    </div>
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>DELİCİOUS FOODS</h3>
+                        <p>
+                            I recommend you to eat on the roof
+
+
+
+                        </p>
+                        <img src = "images/cus6.jpg" alt = "customer image">
+                        <span>HARRY J. ,LONDON</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>All our accommodations feature high-speed, free Wi-Fi access, smart LCD TVs, and bathrooms with premium toiletries and fluffy bathrobes and slippers. Many offer panoramic views of the hotel pool or sparkling sea, and all have private balconies. After a day of rest or exploration, relax in the deluxe beds, complete with the pillows of your choice. Our guests staying in our private rooms can enjoy the special Guest Assistant service that will be available for all their needs during their stay. Private butler service is also provided to our king suite guests.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Fake St.Mountain View, San Francisco, California, USA
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
